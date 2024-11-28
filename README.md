@@ -1,4 +1,5 @@
 **Hi class, welcome to the AOS C111/204 final project!** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
+**test**
 
 For this project, you will be applying your skills to train a machine learning model using real-world data, then publishing a report on your own website.
 
