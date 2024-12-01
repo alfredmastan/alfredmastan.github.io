@@ -2,4 +2,4 @@ title: Alfred Mastan
 description: A template for your AOS C111/204 project site.
 logo: /assets/IMG/template_logo.png
 show_downloads: true
-theme: jekyll-theme-minima
+theme: minima
