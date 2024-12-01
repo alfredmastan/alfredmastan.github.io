@@ -1,14 +1,13 @@
 <br>
-
-# **<center>Animal Faces Recognition<br>Using CNN and ANN Neural Networks</center>**
+<h1 align='center'><b>Animal Faces Recognition<br>Using CNN and ANN Neural Networks</b> </h1>
 
 ---
 
-<center>Alfred Mastan <br>
+<p align='center'>Alfred Mastan <br>
     Department of Atmospheric and Oceanic Sciences, UCLA <br>
     AOS C111: Introduction to Machine Learning for the Physical Sciences <br>
     Dr. Alexander Lozinski
-</center>
+</p>
 
 # **Introduction**
 
@@ -29,11 +28,9 @@ The dataset contains *16,130* high-quality images with **512x512px** resolution 
 Additionally, the data was neatly seperated for training and validation purposes, containing *14,630* and *1,500* images, respectively.
 
 Here are some sample images taken from the dataset for each class:
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
-    <img src="assets/figures/flickr_cat_000048.jpg" alt="Cat" style="margin-right: 10px; min-width: 150px;">
-    <img src="assets/figures/flickr_dog_000010.jpg" alt="Dog" style="margin-right: 10px; min-width: 150px;">
-    <img src="assets/figures/flickr_wild_000035.jpg" alt="Wild" style="margin-right: 10px; min-width: 150px;">
-</div>
+<p align='center'>
+<img src="assets/figures/flickr_cat_000048.jpg" alt="Cat" style="margin-right: 10px; width: 30%;"> <img src="assets/figures/flickr_dog_000010.jpg" alt="Dog" style="margin-right: 10px; width: 30%;"> <img src="assets/figures/flickr_wild_000035.jpg" alt="Wild" style="margin-right: 10px; width: 30%;">
+</p>
 
 # **Modelling**
 
