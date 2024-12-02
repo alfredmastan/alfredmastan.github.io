@@ -9,7 +9,7 @@
     Dr. Alexander Lozinski
 </p>
 
-### **Introduction**
+### **Introduction** 
 
 ---
 
@@ -280,3 +280,7 @@ The main issue for the ANN model in image classification is how sensitive it is 
 [6] M. Lorenz, "Fawn Pug," *Getty Images*. Available: www.gettyimages.com/detail/photo/fawn-pug-royalty-free-image/144815824. Accessed: Nov. 29, 2024.
 
 [7] Y. Choi, Y. Uh, J. Yoo, and J.-W. Ha, *"StarGAN v2: Diverse Image Synthesis for Multiple Domains,"* in *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 2020. Available: https://github.com/clovaai/stargan-v2?tab=readme-ov-file. Accessed: Nov. 29, 2024.
+
+<br>
+
+### [Github Project](https://github.com/alfredmastan/Animal-Faces-Classifier)
