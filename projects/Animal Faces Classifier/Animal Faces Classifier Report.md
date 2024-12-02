@@ -1,5 +1,5 @@
 <br>
-<h1 align='center'><b>Animal Faces Recognition<br>Using CNN and ANN Neural Networks</b> </h1>
+<h2 align='center'><b>Animal Faces Recognition<br>Using CNN and ANN Neural Networks</b></h2>
 
 ---
 
@@ -9,7 +9,7 @@
     Dr. Alexander Lozinski
 </p>
 
-# **Introduction**
+## **Introduction**
 
 ---
 
@@ -17,7 +17,7 @@ Image classification is a growing field in machine learning with numerous deep l
 
 To address this problem, two machine learning architectures are used: **Convolutional Neural Networks (CNNs)** and **Artificial Neural Networks (ANNs)**. The objective is to compare these two models and determine which architecture is more suitable for this task. Using evaluation metrics such as accuracy, confusion matrices, ROC curves, and precision-recall curves, we can determine which model performs better in classifying the images.
 
-# **Data**
+## **Data**
 
 ---
 
@@ -32,11 +32,11 @@ Here are some sample images taken from the dataset for each class:
 <img src="assets/figures/flickr_cat_000048.jpg" alt="Cat" style="margin-right: 10px; width: 30%;"> <img src="assets/figures/flickr_dog_000010.jpg" alt="Dog" style="margin-right: 10px; width: 30%;"> <img src="assets/figures/flickr_wild_000035.jpg" alt="Wild" style="margin-right: 10px; width: 30%;">
 </p>
 
-# **Modelling**
+## **Modelling**
 
 ---
 
-## Data Preprocessing
+### Data Preprocessing
 
 Before the data was fed into the model, there are some preprocessing to do beforehand. This was mostly done using the `TensorFlow` datasets library and the `os` module to load the data from the computer.
 
@@ -58,12 +58,12 @@ Furthermore, the training data was *shuffled* to randomize its order, while the 
 Thus, the data was ready for use in the model.
 
 
-## Neural Network Models
+### Neural Network Models
 
 Two neural network models are being used for this project: **Convolutional Neural Networks (CNN)** and **Artificial Neural Networks (ANN)** as classifiers for the images. Both models were constructed using the `TensorFlow` and `Keras` modules.
 
 
-### Convolutional Neural Networks (CNN)
+#### Convolutional Neural Networks (CNN)
 
 After numerous trials and errors, the *Convolutional Neural Networks (CNN)* was designed as follows to complement the available computing power:
 
@@ -116,7 +116,7 @@ model_cnn.compile(
 )
 ```
 
-### Artificial Neural Networks (ANN)
+#### Artificial Neural Networks (ANN)
 
 For the same reason, the *Artificial Neural Networks (ANN)* model was designed as follows:
 
@@ -157,7 +157,7 @@ model_ann.compile(
 )
 ```
 
-### Training
+#### Training
 
 Both models were trained using `EarlyStopping` on the *validation loss* to further prevent overfitting, as follows:
 
@@ -184,7 +184,7 @@ history_ann = model_ann.fit(
 )
 ```
 
-# Results
+## **Results**
 
 ---
 
@@ -211,7 +211,7 @@ To further evaluate the models, several metrics were used and plotted below to h
 
 *Figure 4. Precision-Recall Curve for CNN and ANN*
 
-# Discussion
+## **Discussion**
 
 ---
 
@@ -255,7 +255,7 @@ Despite both models having high accuracy with well over 80%, they still struggle
 
 Despite all of the limitations, the CNN model still performs better than the ANN model. It is shown that in images 0, 3, and 4, the ANN model fails to predict the animal accurately, where the CNN model was able to predict it. On the other hand, in image 2, both models fail to predict the animal due to the limitations mentioned before. However, in images 1, and 5, both models are able to predict the images correctly.
 
-# Conclusion
+## **Conclusion**
 
 ---
 
@@ -263,7 +263,7 @@ Both model managed to achieve high accuracy, with **95.47%** for the CNN model a
 
 The main issue for the ANN model in image classification is how sensitive it is towards overfitting. To capture more detail and improve accuracy, it requires an increase in the number of neurons and hidden layers, which also increases the likelihood of overfitting. At the same time, adding regularization to generalize the model leads to spikes in loss that lower the accuracy even further, contrary of what we are trying to achieve. Furthermore, adding more neurons and hidden layers significantly increases the memory usage, which causes scalability issues in the future applications.
 
-# References
+## **References**
 
 ---
 
