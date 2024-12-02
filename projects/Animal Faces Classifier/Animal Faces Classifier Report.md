@@ -2,14 +2,14 @@
 <h2 align='center'><b>Animal Faces Recognition<br>Using CNN and ANN Neural Networks</b></h2>
 
 ---
-<br>
+
 <p align='center'>Alfred Mastan <br>
     Department of Atmospheric and Oceanic Sciences, UCLA <br>
     AOS C111: Introduction to Machine Learning for the Physical Sciences <br>
     Dr. Alexander Lozinski
 </p>
 
-## **Introduction**
+### **Introduction**
 
 ---
 
@@ -17,7 +17,7 @@ Image classification is a growing field in machine learning with numerous deep l
 
 To address this problem, two machine learning architectures are used: **Convolutional Neural Networks (CNNs)** and **Artificial Neural Networks (ANNs)**. The objective is to compare these two models and determine which architecture is more suitable for this task. Using evaluation metrics such as accuracy, confusion matrices, ROC curves, and precision-recall curves, we can determine which model performs better in classifying the images.
 
-## **Data**
+### **Data**
 
 ---
 
@@ -32,11 +32,11 @@ Here are some sample images taken from the dataset for each class:
 <img src="assets/figures/flickr_cat_000048.jpg" alt="Cat" style="margin-right: 10px; width: 30%;"> <img src="assets/figures/flickr_dog_000010.jpg" alt="Dog" style="margin-right: 10px; width: 30%;"> <img src="assets/figures/flickr_wild_000035.jpg" alt="Wild" style="margin-right: 10px; width: 30%;">
 </p>
 
-## **Modelling**
+### **Modelling**
 
 ---
 
-### Data Preprocessing
+#### Data Preprocessing
 
 Before the data was fed into the model, there are some preprocessing to do beforehand. This was mostly done using the `TensorFlow` datasets library and the `os` module to load the data from the computer.
 
@@ -58,12 +58,12 @@ Furthermore, the training data was *shuffled* to randomize its order, while the 
 Thus, the data was ready for use in the model.
 
 
-### Neural Network Models
+#### Neural Network Models
 
 Two neural network models are being used for this project: **Convolutional Neural Networks (CNN)** and **Artificial Neural Networks (ANN)** as classifiers for the images. Both models were constructed using the `TensorFlow` and `Keras` modules.
 
 
-#### Convolutional Neural Networks (CNN)
+##### Convolutional Neural Networks (CNN)
 
 After numerous trials and errors, the *Convolutional Neural Networks (CNN)* was designed as follows to complement the available computing power:
 
@@ -116,7 +116,7 @@ model_cnn.compile(
 )
 ```
 
-#### Artificial Neural Networks (ANN)
+##### Artificial Neural Networks (ANN)
 
 For the same reason, the *Artificial Neural Networks (ANN)* model was designed as follows:
 
@@ -157,7 +157,7 @@ model_ann.compile(
 )
 ```
 
-#### Training
+##### Training
 
 Both models were trained using `EarlyStopping` on the *validation loss* to further prevent overfitting, as follows:
 
@@ -184,7 +184,7 @@ history_ann = model_ann.fit(
 )
 ```
 
-## **Results**
+### **Results**
 
 ---
 
@@ -195,7 +195,7 @@ Each model was trained accordingly, resulting in an accuracy of **95.47%** with 
 
 *Figure 1. Accuracy Over Epoch for CNN and ANN*
 
-### Evaluation Metrics
+#### Evaluation Metrics
 
 To further evaluate the models, several metrics were used and plotted below to have a better view on how both models perform:
 
@@ -211,30 +211,30 @@ To further evaluate the models, several metrics were used and plotted below to h
 
 *Figure 4. Precision-Recall Curve for CNN and ANN*
 
-## **Discussion**
+### **Discussion**
 
 ---
 
 Based on the validation accuracy shown in *Figure 1*, the CNN model performs better than the ANN model. The CNN model achieves **95.47%** accuracy, whereas the ANN model achieves **83.13%** accuracy. Although the difference in accuracy may not seem significant, the memory used by each model differ significantly with **12.61 MB** for the CNN model compared with **194.51 MB** for the ANN model. In other words, the CNN model managed to reduce memory usage by **93.5%** compared to the ANN model. However, since relying solely on accuracy can be misleading and inadequate for reaching a conclusion, several additional metrics are used to further emphasize the performance of both models.
 
-### Confusion Matrix
+#### Confusion Matrix
 
 The confusion matrices shown in *Figure 2* reveal the prediction results of both models for each image in the validation data. It is clearly seen that there are more false predictions using the ANN model compared to the CNN model. By looking at the number of false predictions for each class by both models, we can see significant differences. For example, in *Figure 2*, the ANN model predicts **53** cat images as wild, whereas the CNN model predicts only **11** cat images as wild. These mispredictions occurs a lot more frequently in the ANN model throughout different images.
 
 
-### ROC Curve
+#### ROC Curve
 
 The ROC curve, or *Receiver Operating Characteristic* curve, shown in *Figure 3*, was plotted separately for each class with the corresponding *Area Under the Curve* (AUC). The AUC value ranges between **[0, 1]**, where 1 indicates a perfect model, while 0.5 (dotted line) represents a random model. *Figure 3* reveals that the CNN model is a near-perfect model with AUC values ranging between **[0.99, 1.0]** for each class. On the other hand, the ANN model performs reasonably well, with AUC values ranging between **[0.95, 0.96]**. 
 
 It is important to note that the data used is balanced, which makes the ROC-AUC value valid to determine which model performs better. This is because the ROC curve only considers *true positive rates* and *false positive rates*, which might skew the results for imbalanced data. In this case, the CNN model outperforms the ANN model.
 
-### Precision-Recall Curve
+#### Precision-Recall Curve
 
 As mentioned before, the ROC curve considers the *true positive rates* and the *false positive rates*. Meanwhile, the Precision-Recall curve also considers for the *false negatives rates* through *precision* and *recall* values, hence the name. Similarly, the Precision-Recall curve shown in *Figure 4* was also plotted seperately for each class alongside their AUC values. 
 
 We can see that the CNN model also performs better than the ANN model based on their AUC values. Each class in the CNN model has the same AUC value of **0.99**, while the AUC values for the ANN model differs, ranging from **[0.90, 0.93]**. Again, the difference indicates that the CNN model is superior.
 
-### Insights
+#### Insights
 
 During the process of modelling the ANN model, several attempts were made to increase its accuracy. The first intuition was to increase the number of neurons along with the number of hidden layers. This resulted in lower loss for both training and validation data. However, the model tends to overfit, which leads to lower validation accuracy compared to the previous simpler model. 
 
@@ -242,7 +242,7 @@ In order to combat this, several regularizations methods were used, such as mult
 
 This phenomenon is due to the nature of the ANN model itself, which is far more prone to overfitting in image classification compared to the CNN model. The tradeoff between accuracy and loss on the ANN model explains how each of the evaluations metrics shows that the CNN model was able to perform better than the ANN model. 
 
-### Outside Data
+#### Outside Data
 
 To further evaluate the models' performance, several images were taken from the internet and run through both models.
 
@@ -255,7 +255,7 @@ Despite both models having high accuracy with well over 80%, they still struggle
 
 Despite all of the limitations, the CNN model still performs better than the ANN model. It is shown that in images 0, 3, and 4, the ANN model fails to predict the animal accurately, where the CNN model was able to predict it. On the other hand, in image 2, both models fail to predict the animal due to the limitations mentioned before. However, in images 1, and 5, both models are able to predict the images correctly.
 
-## **Conclusion**
+### **Conclusion**
 
 ---
 
@@ -263,7 +263,7 @@ Both model managed to achieve high accuracy, with **95.47%** for the CNN model a
 
 The main issue for the ANN model in image classification is how sensitive it is towards overfitting. To capture more detail and improve accuracy, it requires an increase in the number of neurons and hidden layers, which also increases the likelihood of overfitting. At the same time, adding regularization to generalize the model leads to spikes in loss that lower the accuracy even further, contrary of what we are trying to achieve. Furthermore, adding more neurons and hidden layers significantly increases the memory usage, which causes scalability issues in the future applications.
 
-## **References**
+### **References**
 
 ---
 
