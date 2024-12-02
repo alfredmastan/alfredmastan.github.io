@@ -2,7 +2,7 @@
 <h2 align='center'><b>Animal Faces Recognition<br>Using CNN and ANN Neural Networks</b></h2>
 
 ---
-
+<br>
 <p align='center'>Alfred Mastan <br>
     Department of Atmospheric and Oceanic Sciences, UCLA <br>
     AOS C111: Introduction to Machine Learning for the Physical Sciences <br>
