@@ -1,4 +1,4 @@
-title: Alfred Mastan
+title: Fred's Portfolio
 author:
   name: Alfred Mastan
   email: alfredmastann@gmail.com
@@ -28,8 +28,8 @@ plugins:
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
-header_pages:
-  - project.md
+#header_pages:
+#  - project.md
 #  - <alfredmastan.github.io/projects/Animal Faces Classifier
 #/Animal Faces Classifier Report.md>
 
