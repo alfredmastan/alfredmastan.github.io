@@ -15,7 +15,7 @@
 
 Image classification is a growing field in machine learning with numerous deep learning techniques that are continuously being improved to increase accuracy and applicability across various industries. There have been numerous cases where image classification is used, such as in self-driving cars, traffic control, quality control, and more. In this case, we take a common problem in recognizing animal faces through machines. The task involves classifying animals based on their facial features, which has its own unique challenges due to various appearances across species. There have been multiple applications in wildlife conservation, pet identification, and veterinary diagnostics where similar model are being used to help them catagorize animals in photos.
 
-To address this problem, two machine learning architectures are used: **Convolutional Neural Networks (CNNs)** and **Artificial Neural Networks (ANNs)**. The objective is to compare these two models and determine which architecture is more suitable for this task. Using evaluation metrics such as accuracy, confusion matrices, ROC curves, and precision-recall curves, we can determine which model performs better in classifying the images.
+To address this problem, two machine learning architectures are used: **Convolutional Neural Network (CNN)** and **Artificial Neural Network (ANN)**. The objective is to compare these two models and determine which architecture is more suitable for this task. Using evaluation metrics such as accuracy, confusion matrices, ROC curves, and precision-recall curves, we can determine which model performs better in classifying the images.
 
 ### **Data**
 
@@ -60,12 +60,12 @@ Thus, the data was ready for use in the model.
 
 #### Neural Network Models
 
-Two neural network models are being used for this project: **Convolutional Neural Networks (CNN)** and **Artificial Neural Networks (ANN)** as classifiers for the images. Both models were constructed using the `TensorFlow` and `Keras` modules.
+Two neural network models are being used for this project: **Convolutional Neural Network (CNN)** and **Artificial Neural Network (ANN)** as classifiers for the images. Both models were constructed using the `TensorFlow` and `Keras` modules.
 
 
-##### Convolutional Neural Networks (CNN)
+##### Convolutional Neural Network (CNN)
 
-After numerous trials and errors, the *Convolutional Neural Networks (CNN)* was designed as follows to complement the available computing power:
+After numerous trials and errors, the *Convolutional Neural Network (CNN)* was designed as follows to complement the available computing power:
 
 - A `Rescaling` layer as the input layer to normalize the data for stability.
 - **3 sets** of `Convolution` and `MaxPooling` layers with the `relu` activation function.
@@ -116,9 +116,9 @@ model_cnn.compile(
 )
 ```
 
-##### Artificial Neural Networks (ANN)
+##### Artificial Neural Network (ANN)
 
-For the same reason, the *Artificial Neural Networks (ANN)* model was designed as follows:
+For the same reason, the *Artificial Neural Network (ANN)* model was designed as follows:
 
 - A `Rescaling` layer as the input layer to normalize the data for stability.
 - **3 hidden layers** with a decreasing number of neurons, starting from **1024** and reducing to **256**.
