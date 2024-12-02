@@ -10,13 +10,10 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 
 <h1><b>Hi! I am Alfred</b></h1>
 <h3>Undergraduate Student</h3>
-<h4>Sophomore year, Pre-Data Theory Major @ UCLA</h4>
+<h4>Pre-Data Theory Major @ UCLA</h4>
 
 <br>
 <br>
