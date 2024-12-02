@@ -30,8 +30,8 @@ plugins:
 # in order as they should show up.
 header_pages:
   - project.md
-  - <alfredmastan.github.io/projects/Animal Faces Classifier
-/Animal Faces Classifier Report.md>
+#  - <alfredmastan.github.io/projects/Animal Faces Classifier
+#/Animal Faces Classifier Report.md>
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
