@@ -259,7 +259,7 @@ Despite all of the limitations, the CNN model still performs better than the ANN
 
 ---
 
-Both model managed to achieve high accuracy, with **95.47%** for the CNN model and **83.13%** for the ANN model. However, all of the evaluations consistently show that the CNN model is superior to the CNN model. Additionally, the CNN model was able to predict more accurately on outside data from random source in the internet. This makes the CNN model a clear winner for image classification tasks compared to the ANN model due to how each model handles data and its architecture. 
+Both model managed to achieve high accuracy, with **95.47%** for the CNN model and **83.13%** for the ANN model. However, all of the evaluations consistently show that the CNN model is superior to the ANN model. Additionally, the CNN model was able to predict more accurately on outside data from random source in the internet. This makes the CNN model a clear winner for image classification tasks compared to the ANN model due to how each model handles data and its architecture. 
 
 The main issue for the ANN model in image classification is how sensitive it is towards overfitting. To capture more detail and improve accuracy, it requires an increase in the number of neurons and hidden layers, which also increases the likelihood of overfitting. At the same time, adding regularization to generalize the model leads to spikes in loss that lower the accuracy even further, contrary of what we are trying to achieve. Furthermore, adding more neurons and hidden layers significantly increases the memory usage, which causes scalability issues in the future applications.
 
