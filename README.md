@@ -36,6 +36,6 @@
 
 ***
 
-* [🐶 Animal Faces Recognition Using CNN and ANN](</projects/Animal Faces Recognition/Animal Faces Recognition Report>)
+* [🐶 Animal Faces Recognition Using CNN and ANN](</projects/Animal Faces Recognition/Animal Faces Recognition Report.md>)
 * [🎮 Video Game Sales Analysis](https://github.com/alfredmastan/Video-Game-Sales-Analysis/blob/main/Video%20Game%20Sales%20EDA.ipynb)
 
