@@ -37,7 +37,7 @@
 ***
 
 * [🏀 Predicting NBA Success Through Performance Metrics](<projects/Predicting NBA Success/FinalReport.pdf>)
-* [🐶 Animal Faces Recognition Using CNN and ANN](/projects/Animal%20Faces%20Recognition/Animal%20Faces%20Recognition%20Report.md)
+* [🐶 Animal Faces Recognition Using CNN and ANN](/projects/Animal%20Faces%20Recognition/Animal%20Faces%20Recognition%20Report)
 * [🎮 Video Game Sales Analysis](https://github.com/alfredmastan/Video-Game-Sales-Analysis/blob/main/Video%20Game%20Sales%20EDA.ipynb)
 
 
